@@ -21,9 +21,9 @@ void fillMatrixWithRandomValues(int matrix[ROWS][COLS], short int Rows, short in
 
 void calculateSumOfRowsOfMatrix(int matrix[ROWS][COLS], int SumOfRow[ROWS], short int Rows, short int Cols)
 {
-    for (short int i = 0; i < ROWS; i++)
+    for (short int i = 0; i < Rows; i++)
     {
-        for (short int j = 0; j < COLS; j++)
+        for (short int j = 0; j < Cols; j++)
             SumOfRow[i] += matrix[i][j];
     }
 }
@@ -32,7 +32,7 @@ void printMatrixSumOfRows(int SumOfMatrixRows[ROWS], int Rows)
 {
     std::cout << "\nThe following is the sum of each row in the matrix : \n";
 
-    for (int i = 0; i < ROWS; i++)
+    for (int i = 0; i < Rows; i++)
         std::cout << "Row " << i << " Sum = " << SumOfMatrixRows[i] << std::endl;
 }
 
