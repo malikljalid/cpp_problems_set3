@@ -23,8 +23,8 @@ void multiplyTwoMatrixes(int matrix1[ROWS][COLS], int matrix2[ROWS][COLS], int m
 {
     for (short int i = 0; i < Rows; i++)
     {
-        for (short int j = 0; j < Rows; j++)
-            matrix3[i][j] = matrix1[i][j] * matrix2[i][j];
+        for (short int j = 0; j < Cols; j++)
+            matrixRes[i][j] = matrix1[i][j] * matrix2[i][j];
     }
 }
 
