@@ -19,7 +19,7 @@ void fillMatrixWithRandomValues(int matrix[ROWS][COLS], short int Rows, short in
     }
 }
 
-int  calculateSumOfMatrixValues(int matrix[ROWS][COLS], short int Rows, short int Cols)
+int  getSumOfMatrixValues(int matrix[ROWS][COLS], short int Rows, short int Cols)
 {
     int Sum = 0;
 
@@ -51,6 +51,8 @@ int main(void)
 
     fillMatrixWithRandomValues(matrix, ROWS, COLS);
     printMatrix(matrix, ROWS, COLS);
+
+    std::cout << "\nSum of matrix values : " << getSumOfMatrixValues(matrix, ROWS, COLS) << std::endl;
 
     return (0);
 }
