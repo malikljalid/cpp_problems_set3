@@ -10,7 +10,7 @@ void fillMatrixWithOrderedNumbers(int matrix[ROWS][COLS], int Rows, int Cols)
     for (int i = 0; i < Rows; i++)
     {
         for (int j = 0; j < Cols; j++)
-            matrix[i][j] = ((i + 1) * i) + (j + 1);
+            matrix[i][j] = (Rows * i) + (j + 1);
     }
 }
 
