@@ -25,9 +25,9 @@ void printSumOfColsOfMatrix(int matrix[ROWS][COLS], short int Rows, short int Co
 
     std::cout << "\nThe following is the sum of each row in the matrix : \n";
 
-    for (short int i = 0; i < ROWS; i++)
+    for (short int i = 0; i < Rows; i++)
     {
-        for (short int j = 0; j < COLS; j++)
+        for (short int j = 0; j < Cols; j++)
             SumOfCol[j] += matrix[i][j];
     }
 
