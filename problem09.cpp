@@ -29,7 +29,6 @@ void printMiddleRowOfMatrix(int matrix[ROWS][COLS], short int Rows, short int Co
     std::cout << std::endl;
 }
 
-
 void printMiddleColOfMatrix(int matrix[ROWS][COLS], short int Rows, short int Cols)
 {
     short int middleCol = Cols / 2;
