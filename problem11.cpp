@@ -18,7 +18,7 @@ int  getSumOfMatrixValues(int matrix[ROWS][COLS], short int Rows, short int Cols
 
 bool matrixesAreEqual(int matrix1[ROWS][COLS], int matrix2[ROWS][COLS], short int Rows, short int Cols)
 {
-    return (getSumOfMatrixValues(matrix1, ROWS, COLS) == getSumOfMatrixValues(matrix2, ROWS, COLS));
+    return (getSumOfMatrixValues(matrix1, Rows, Cols) == getSumOfMatrixValues(matrix2, Rows, Cols));
 }
 
 int main(void)
