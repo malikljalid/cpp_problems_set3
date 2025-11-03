@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 void printFirstCharacterOfEachWordIn(std::string msg)
 {
