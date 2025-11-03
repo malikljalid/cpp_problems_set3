@@ -2,7 +2,7 @@
 #include <string>
 #include <cctype>
 
-void printFirstCharacterOfEachWordIn(std::string &msg)
+void upperFirstCharacterOfEachWordIn(std::string &msg)
 {
     bool isFirstLetter = true;
 
@@ -24,7 +24,7 @@ int main(void)
 {
     std::string msg = "  Hello     World 2025 @you have 2 months to end ";
 
-    printFirstCharacterOfEachWordIn(msg);
+    upperFirstCharacterOfEachWordIn(msg);
 
     std::cout << msg << std::endl;
 
