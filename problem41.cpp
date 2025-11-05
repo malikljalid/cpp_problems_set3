@@ -9,12 +9,13 @@ std::vector <std::string> splitReversed(std::string msg)
     int                         j       = 0;
     std::vector <std::string>   vWords;
 
-    for (int i = end - 1; i > 0; i--)
+    for (int i = end - 1; i >= 0; i--)
     {
         j = i;
-        while (msg[i] != ' ' && i < end)
+        while (msg[i] != ' ' && i >= 0)
         {
-            if (msg[i-1] == ' ')
+            
+            if (msg[i-1] == ' ' || i == 0)
                 vWords.push_back(msg.substr(i, j - i + 1));
             i--;
         }
@@ -34,6 +35,7 @@ std::string joinVectorStrings(std::vector <std::string> vStrings, char delim)
 }
 
 
+
 //---------------- method 2 --------------------
 std::vector <std::string> split(std::string msg)
 {
@@ -46,7 +48,7 @@ std::vector <std::string> split(std::string msg)
         j = i;
         while (msg[i] != ' ' && i < end)
         {
-            if (msg[i+1] == ' ')
+            if (msg[i+1] == ' ' || i == end - 1)
                 vWords.push_back(msg.substr(j, i - j + 1));
             i++;
         }
@@ -69,7 +71,7 @@ std::string joinVectorStringsReversed(std::vector <std::string> vStrings, char d
 
 int main(void)
 {
-    std::string msg = "  Hello World, it's 2025!  ";
+    std::string msg = "Hello World, it's 2025!";
 
     std::cout << joinVectorStrings(splitReversed(msg), ' ') << std::endl;
     std::cout << joinVectorStringsReversed(split(msg), ' ') << std::endl;
