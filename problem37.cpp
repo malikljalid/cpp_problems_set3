@@ -13,7 +13,7 @@ std::vector <std::string> split(std::string msg)
         j = i;
         while (msg[i] != ' ' && i < end)
         {
-            if (msg[i+1] == ' ')
+            if (msg[i+1] == ' ' || i == end - 1)
                 vWords.push_back(msg.substr(j, i - j + 1));
             i++;
         }
