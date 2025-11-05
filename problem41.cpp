@@ -34,6 +34,10 @@ std::string joinVectorStrings(std::vector <std::string> vStrings, char delim)
     return (fullString.substr(0, fullString.length() - 1));
 }
 
+std::string reverseString(std::string msg, char delim)
+{
+    return (joinVectorStrings(splitReversed(msg), delim));
+}
 
 
 //---------------- method 2 --------------------
@@ -69,12 +73,18 @@ std::string joinVectorStringsReversed(std::vector <std::string> vStrings, char d
     return (fullString.substr(0, fullString.length() - 1));
 }
 
+std::string reverseString2(std::string msg, char delim)
+{
+    return (joinVectorStringsReversed(split(msg), delim));
+}
+
+
 int main(void)
 {
     std::string msg = "Hello World, it's 2025!";
 
-    std::cout << joinVectorStrings(splitReversed(msg), ' ') << std::endl;
-    std::cout << joinVectorStringsReversed(split(msg), ' ') << std::endl;
+    std::cout << reverseString(msg, ' ')  << std::endl;
+    std::cout << reverseString2(msg, ' ') << std::endl;
 
     return (0);
 }
