@@ -2,6 +2,14 @@
 #include <string>
 #include <vector>
 
+std::string lower(std::string msg)
+{
+    for (int i = 0; i < (int)msg.length(); i++)
+        msg[i] = tolower(msg[i]);
+
+    return (msg);
+}
+
 std::vector <std::string> split(std::string msg)
 {
     int                         end   = (int)msg.length();
@@ -44,14 +52,6 @@ std::string findAndReplaceIn(std::string msg, std::string toFind, std::string to
     }
 
     return (joinVectorStrings(vWords, ' '));
-}
-
-std::string lower(std::string msg)
-{
-    for (int i = 0; i < (int)msg.length(); i++)
-        msg[i] = tolower(msg[i]);
-
-    return (msg);
 }
 
 std::string findAndReplaceIn(std::string msg, std::string toFind, std::string toReplace, bool matchCase)
