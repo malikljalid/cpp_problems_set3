@@ -85,7 +85,7 @@ void printHeader(std::vector <stBankRecord> vClients)
 
 int main(void)
 {
-    printHeader(LoadDataFromFileToVector("ListOfClientsData.txt", ":"));
+    printHeader(LoadDataFromFileToVector("clients_bankRecords.txt", ":"));
 
     return (0);
 }
