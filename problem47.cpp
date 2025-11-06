@@ -54,7 +54,7 @@ void addLineToFile(std::string line, std::string fileName)
     }
 }
 
-void addRecordsToFile(std::string fileName)
+void saveRecordsToFile(std::string fileName)
 {
     bool userWantAddMore = true;
 
@@ -70,7 +70,7 @@ void addRecordsToFile(std::string fileName)
 
 int main(void)
 {
-    addRecordsToFile("ListOfClientsData.txt");
+    saveRecordsToFile("ListOfClientsData.txt");
 
     return (0);
 }
