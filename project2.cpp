@@ -658,7 +658,7 @@ int main(void)
 {
     stBankMenu Menu = initMenu("clients_bankRecords.txt", ":");
 
-    while (1)
+    while (true)
     {
         showMenu();
         Menu.Operation.Basic = readUserOperation();
